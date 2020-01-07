@@ -1,0 +1,20 @@
+<# 
+
+Letter Changes challange
+
+Have the function Letter Changes (str) take
+the state parameter being passed and modify It
+using the following algorithm. Replace every
+letter in the string with the letter following it in
+the alphabet (ie. becomes d, z becomes a).
+Then capitalize every vowel in this new string
+(a, e, i, o, u) and finally return this modified
+string
+
+Examples
+        Input: "hello 3
+        Output: Ifmmp3
+
+        Input: "fun times!"
+        Output: gov uft!
+#>
