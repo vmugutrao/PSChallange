@@ -1,4 +1,4 @@
-Function Letterchange
+Function Letterchange1
     {
     [CmdletBinding()]
     Param
@@ -49,3 +49,28 @@ Function Letterchange
         Return $Output
     }
 }
+
+
+Function Letterchange2($String){
+    $Alphabets     = '[^a-zA-Z-]'
+    $Vowels        = @("A","E","I","O","U")
+    $UpdatedString = ""
+    
+    $String.tochararray() | %{
+        $SplitAlphabet = $_.tostring().ToLower()
+        if($SplitAlphabet.tostring().toupper() -ne "Z")
+        {
+            if(!($SplitAlphabet -match $Alphabets)){$next = [char](([byte][char] $SplitAlphabet ) + 1)}
+            else{$next = $SplitAlphabet}
+        }
+        else
+        {
+            $next = "a"
+        }
+        if($Vowels.Contains($next.tostring().ToUpper())){$next = $next.tostring().ToUpper()}
+        $UpdatedString = $UpdatedString + $next
+    }
+    
+    return $UpdatedString
+}
+
