@@ -1,3 +1,4 @@
+## Method 1 (long)
 Function Letterchange1
     {
     [CmdletBinding()]
@@ -50,7 +51,7 @@ Function Letterchange1
     }
 }
 
-
+## Method 2 (Short one)
 Function Letterchange2($String){
     $Alphabets     = '[^a-zA-Z-]'
     $Vowels        = @("A","E","I","O","U")
