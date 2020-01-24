@@ -1,0 +1,8 @@
+Create 150000 Unique codes such as : 3HGYSTG
+
+Conditions:
+
+The codes should not contain the following characters
+b, 6, 8, 0/0/0 or 1/1/L
+
+no duplicates !
