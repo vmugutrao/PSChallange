@@ -12,7 +12,6 @@ Function KaprekarsConstant($num)
         Write-Host "adding '0' at end"
         $num1 = "$($num1)0"
     }
-
     Do {
         $i = $i+1
         [String]$num1 = $num1
